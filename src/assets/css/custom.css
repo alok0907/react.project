@@ -1,0 +1,12 @@
+.navbar-container Navbar.Brand {
+    color: aquamarine;
+}
+
+.info {
+    height: '70px';
+    width: 'auto';
+    color: 'maroon';
+    margin-top: '10px';
+    text-decoration: 'underline';
+    font-weight: 'bold'
+}
