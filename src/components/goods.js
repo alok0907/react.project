@@ -39,7 +39,7 @@ export class Goods extends Component {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted"><a>Learn more...</a></small>
+                        <small className="text-muted">Learn more...</small>
                     </Card.Footer>
                 </Card>
 
@@ -56,7 +56,7 @@ export class Goods extends Component {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted"><a>Learn more...</a></small>
+                        <small className="text-muted">Learn more...</small>
                     </Card.Footer>
                 </Card>
 
@@ -73,7 +73,7 @@ export class Goods extends Component {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted"><a>Learn more...</a></small>
+                        <small className="text-muted">Learn more...</small>
                     </Card.Footer>
                 </Card>
 
