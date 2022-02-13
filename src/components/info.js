@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 export class Info extends Component {
   render() {
     return (
-      <Container className='mt-lg-3 mb-0'>
+      <Container className='mt-lg-3 mt-md-3 mb-0'>
           <Row>
               <Col>
                   <h1 className="display-6 fw-bold text-center text-danger">
