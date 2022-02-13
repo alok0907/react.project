@@ -1,15 +1,19 @@
 import './App.css';
 
 import { NavigationBar } from './components/navbar';
-import { Goods } from './components/goods';
 import { Slides } from './components/slides';
+import { Info } from './components/info';
+import { Products } from './components/products';
+import { Footer } from './components/footer';
 
 function App() {
   return (
     <div className="App">
       <NavigationBar />
-      <Slides />      
-      <Goods />
+      <Slides />   
+      <Info />   
+      <Products />
+      <Footer />
     </div>
   );
 }

@@ -4,7 +4,7 @@
 
 /*#  Goods Component  */
 
-.para {
+/* .para {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -16,5 +16,25 @@
   width: auto;
   color: maroon;
   font-weight: bold
+} */
+
+/*#  Footer Component  */
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.836);
+  color: white;
 }
+.footer h4{
+  font-weight: bold;
+  color: rgb(161, 197, 245);
+}
+.footer li {
+  color: rgb(228, 206, 177);
+}
+.footer p {
+  color:rgb(218, 243, 209)
+  
+}
+
 

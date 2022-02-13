@@ -3,46 +3,55 @@ import slide1 from '../assets/img/slides/slide.jpg'
 import slide2 from '../assets/img/slides/slide2.jpg'
 import Carousel  from 'react-bootstrap/Carousel';
 
+const heading = {
+	color: 'yellow',
+	fontWeight: 'bolder'
+}
+const para = {
+	color: 'white',
+	fontWeight: 'bolder'
+}
+
 export class Slides extends Component {
   render() {
     return (
 		<>
 			<Carousel fade>
 
-				<Carousel.Item>
+				<Carousel.Item interval={1000}>
 					<img
 						className="d-block w-100"
 						src={slide1}
 						alt="First slide"
 					/>
-					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					<Carousel.Caption className='d-none d-md-block'>
+					<h1 style={heading}>VELETO</h1>
+					<p style={para}>We are leading manufacturer of Velvet Pencils</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 
-				<Carousel.Item>
+				<Carousel.Item interval={1000}>
 					<img
 						className="d-block w-100"
 						src={slide2}
 						alt="Second slide"
 					/>
 
-					<Carousel.Caption>
-						<h3>Second slide label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<Carousel.Caption className='d-none d-md-block'>
+						<h1 style={heading}>VELETO</h1>
+						<p style={para}>Play and learn with our attractive pencils</p>  
 					</Carousel.Caption>
 				</Carousel.Item>
 
-				<Carousel.Item>
+				<Carousel.Item interval={1000}>
 					<img
 						className="d-block w-100"
 						src={slide1}
 						alt="Third slide"
 					/>
-					<Carousel.Caption>
-						<h3>Third slide label</h3>
-						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+					<Carousel.Caption className='d-none d-md-block'>
+					<h1 style={heading}>VELETO</h1>
+					<p style={para}>Use our Eco-Friendly Velvet pencils</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 
