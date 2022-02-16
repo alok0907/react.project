@@ -1,6 +1,4 @@
-
 /*#-----   CUSTOM CSS   ------ */
-
 
 /*#  Goods Component  */
 
@@ -25,7 +23,7 @@
   background-color: rgba(0, 0, 0, 0.836);
   color: white;
 }
-.footer h4{
+.footer h4 {
   font-weight: bold;
   color: rgb(161, 197, 245);
 }
@@ -33,8 +31,5 @@
   color: rgb(228, 206, 177);
 }
 .footer p {
-  color:rgb(218, 243, 209)
-  
+  color: rgb(218, 243, 209);
 }
-
-
