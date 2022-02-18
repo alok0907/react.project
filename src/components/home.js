@@ -1,7 +1,6 @@
 // import { NavigationBar } from "./navbar";
 import { Slides } from "./slides";
-import { Info } from "./info";
-import { Products } from "./products";
+import { Cards } from "./cards";
 import { Footer } from "./footer";
 
 import React, { Component } from "react";
@@ -11,8 +10,7 @@ export default class Home extends Component {
     return (
       <div>
         <Slides />
-        <Info />
-        <Products />
+        <Cards />
         <Footer />
       </div>
     );

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "../assets/img/favicon.png";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
 
 import Home from "./home";
 import About from "./about";
@@ -19,68 +20,92 @@ import Login from "./login";
 export class NavigationBar extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
-          <Container>
-            {/* Brand and Brand Logo */}
-            <Navbar.Brand as={Link} to="/" className="text-warning">
-              <img
-                alt="Brand Logo"
-                src={logo}
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-              />{" "}
-              SINGH BUILDERS
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="ms-auto ">
-                <Nav.Link as={Link} className="active mx-3" to="/">
-                  Home
+      <>
+        <BrowserRouter>
+          <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+            <Container>
+              {/* Brand and Brand Logo */}
+              <LinkContainer to="/">
+                <Nav.Link>
+                  <Navbar.Brand className="text-warning">
+                    <img
+                      alt="Brand Logo"
+                      src={logo}
+                      width="30"
+                      height="30"
+                      className="d-inline-block align-top"
+                    />{" "}
+                    SINGH BUILDERS
+                  </Navbar.Brand>
                 </Nav.Link>
-                <Nav.Link as={Link} className="mx-3" to="/about">
-                  AboutUs
-                </Nav.Link>
-                <NavDropdown
-                  className="mx-3"
-                  title="Properties"
-                  id="collapsible-nav-dropdown"
-                >
-                  <NavDropdown.Item as={Link} to="/house">
-                    House
-                  </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/apartment">
-                    Apartment
-                  </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/plot">
-                    Residential Plot
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <Nav.Link as={Link} className="mx-3" to="contact">
-                  Contact
-                </Nav.Link>
-              </Nav>
-              <Nav as={Link} to="/login" className="me text-decoration-none">
-                <Button className="mx-lg-5 mx-md-3 px-2" variant="warning">
-                  Login
-                </Button>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-        <div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/house" element={<House />} />
-            <Route path="/plot" element={<Plot />} />
-            <Route path="/apartment" element={<Apartment />} />
-            <Route path="/login" element={<Login />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
+              </LinkContainer>
+
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="ms-auto ">
+                  <LinkContainer to="/">
+                    <Nav.Link className="active mx-3">Home</Nav.Link>
+                  </LinkContainer>
+
+                  <LinkContainer to="/about">
+                    <Nav.Link className="ms-md-0 mx-3 me-md-0">
+                      AboutUs
+                    </Nav.Link>
+                  </LinkContainer>
+
+                  <NavDropdown
+                    className="mx-3"
+                    title="Properties"
+                    id="collapsible-nav-dropdown"
+                  >
+                    <LinkContainer to="/house">
+                      <NavDropdown.Item>House</NavDropdown.Item>
+                    </LinkContainer>
+
+                    <LinkContainer to="/apartment">
+                      <NavDropdown.Item>Apartment</NavDropdown.Item>
+                    </LinkContainer>
+
+                    <LinkContainer to="/plot">
+                      <NavDropdown.Item>Residential Plot</NavDropdown.Item>
+                    </LinkContainer>
+                  </NavDropdown>
+
+                  <LinkContainer to="/contact">
+                    <Nav.Link className="mx-3 ms-md-0 ps-md-0">
+                      Contact
+                    </Nav.Link>
+                  </LinkContainer>
+                </Nav>
+
+                <Nav className="me text-decoration-none">
+                  <LinkContainer to="/login">
+                    <Nav.Link>
+                      <Button
+                        className="mx-lg-5 mx-md-3 px-2 py-1 btn d-flex justify-content-center d-md-table mx-auto" //#  To change width and center the BUTTON
+                        variant="info"
+                      >
+                        Login
+                      </Button>
+                    </Nav.Link>
+                  </LinkContainer>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+          <div>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/house" element={<House />} />
+              <Route path="/plot" element={<Plot />} />
+              <Route path="/apartment" element={<Apartment />} />
+              <Route path="/login" element={<Login />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </>
     );
   }
 }

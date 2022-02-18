@@ -20,26 +20,26 @@ export class Slides extends Component {
         <Carousel fade pause="false">
           <Carousel.Item interval={2000}>
             <img className="d-block w-100" src={slide1} alt="First slide" />
-            <Carousel.Caption className="d-none d-md-block">
+            {/* <Carousel.Caption className="d-none d-md-block">
               <h1 style={heading}>Houses</h1>
               <p style={para}>Get your dream house</p>
-            </Carousel.Caption>
+            </Carousel.Caption> */}
           </Carousel.Item>
 
           <Carousel.Item interval={2000}>
             <img className="d-block w-100" src={slide2} alt="Second slide" />
-            <Carousel.Caption className="d-none d-md-block">
+            {/* <Carousel.Caption className="d-none d-md-block">
               <h1 style={heading}>Luxury Interiors</h1>
               <p style={para}>Live the Modern Life</p>
-            </Carousel.Caption>
+            </Carousel.Caption> */}
           </Carousel.Item>
 
           <Carousel.Item interval={2000}>
             <img className="d-block w-100" src={slide3} alt="Third slide" />
-            <Carousel.Caption className="d-none d-md-block">
+            {/* <Carousel.Caption className="d-none d-md-block">
               <h1 style={heading}>Apartment</h1>
               <p style={para}>Get the best Apartment </p>
-            </Carousel.Caption>
+            </Carousel.Caption> */}
           </Carousel.Item>
         </Carousel>
       </>

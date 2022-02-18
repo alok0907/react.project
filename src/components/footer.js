@@ -2,16 +2,16 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer py-5">
       <div className="container">
         <div className="row">
           {/*column 1 */}
           <div className="col-md-4 col-sm-6">
             <h4>Useful Links</h4>
             <ul className="list-unstyled">
-              <li>Properties</li>
-              <li>About Us</li>
-              <li>Login</li>
+              <li>House</li>
+              <li>Apartment</li>
+              <li>Residential Plot</li>
               {/* <li>Contact</li> */}
             </ul>
           </div>
@@ -39,7 +39,9 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="footer-bottom">
           <p className="text-xs-center">
-            &copy;Veleto {new Date().getFullYear()} - All Rights Reserved
+            <hr class="bg-secondary border-2" />
+            &copy;Singh Builders {new Date().getFullYear()} - All Rights
+            Reserved
           </p>
         </div>
       </div>

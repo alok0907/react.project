@@ -11,12 +11,19 @@ import home from "../assets/img/cards/home.jpg";
 import plot from "../assets/img/cards/plot.jpg";
 import apartment from "../assets/img/cards/apartment.jpg";
 
-export class Products extends Component {
+export class Cards extends Component {
   render() {
     return (
       <>
         <Container>
-          <Row className="mx-4 py-3 my-lg-0 px-lg-5 ms-lg-5">
+          <Row className="mt-lg-5 mt-4">
+            <Col>
+              <h1 className="mt-lg-5 display-6 fw-bold text-center text-danger">
+                Our Services :
+              </h1>
+            </Col>
+          </Row>
+          <Row className="row-cols-auto ms-md-3 ps-lg-4 ms-lg-5 my-lg-5 justify-content-center">
             <Col className="col-md-6 col-lg-4 py-3">
               <Card
                 border="dark"
