@@ -1,82 +1,63 @@
 import React, { Component } from "react";
-import { Footer } from "./footer";
-import Heading from "./heading";
+import PropTypes from "prop-types";
 export default class Login extends Component {
   render() {
     return (
       <>
-        <Heading title="Login" />
-        {/* <div>
-          <form className="form">
-            <label>
-              Name
-              <input
-                type="text"
-                id="userName"
-                placeholder="Enter username"
-                onChange={this.props.usernameChange}
-              />
-            </label>
-
-            <label>
-              Password
-              <input
-                type="password"
-                id="password"
-                onChange={this.props.passwordChange}
-              />
-            </label>
-            <br />
-            <br />
-
-            <input type="submit" value="Submit" />
-          </form>
-          <p>Username : {this.props.userChange}</p>
-          <p>Password : {this.props.passChange}</p>
-        </div> */}
-
         <div className="container-fluid py-5">
           <div className="row row-cols-auto mt-3 justify-content-center">
             <div className="col my-5 pt-4 px-4 px-lg-5 shadow-lg mb-5 bg-light rounded">
               <form>
-                <div class="my-3">
-                  <label for="exampleInputEmail1" class="form-label">
-                    Email / Username
+                <div className="my-3">
+                  <label htmlFor="exampleInputEmail1" className="form-label">
+                    Email
                   </label>
                   <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
-                    placeholder="name@example.com"
+                    placeholder="alok@example.com"
+                    onChange={this.props.handleEmail}
                   />
                 </div>
-                <div class="mb-3 pt-3">
-                  <label for="exampleInputPassword1" class="form-label">
+                <div className="mb-3 pt-3">
+                  <label htmlFor="exampleInputPassword1" className="form-label">
                     Password
                   </label>
                   <input
                     type="password"
-                    class="form-control"
+                    className="form-control"
                     id="exampleInputPassword1"
                     placeholder="Password"
+                    onChange={this.props.handlePassword}
                   />
                 </div>
                 <button
                   type="submit"
-                  class="btn btn-info my-5 d-flex justify-content-center d-md-table mx-auto" //#    To Center Button in all View Port
+                  className="btn btn-info my-5 d-flex justify-content-center d-md-table mx-auto" //#    To Center Button in all View Port
                 >
                   Submit
                 </button>
               </form>
             </div>
           </div>
-          <div className="row my-5">
-            <div className="col my-5"></div>
+          <div className="row my-5 text-center">
+            <div className="col-4 mx-auto my-5 bg-warning">
+              <h1>Output :</h1>
+              <p>Email : {this.props.email}</p>
+              <p>Password: {this.props.password}</p>
+            </div>
           </div>
         </div>
-        <Footer />
       </>
     );
   }
 }
+
+Login.propTypes = {
+  email: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
+  handleEmail: PropTypes.func.isRequired,
+  handlePassword: PropTypes.func.isRequired,
+};

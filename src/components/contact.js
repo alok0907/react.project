@@ -100,7 +100,7 @@ export default class Contact extends Component {
                   controlId="exampleForm.ControlInput1"
                 >
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="name@example.com" />
+                  <Form.Control type="email" placeholder="alok@example.com" />
                 </Form.Group>
                 <Form.Group
                   className="mb-3"

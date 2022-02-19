@@ -38,8 +38,8 @@ export const Footer = () => {
         </div>
         {/* Copyright */}
         <div className="footer-bottom">
+          <hr className="bg-secondary border-2" />
           <p className="text-xs-center">
-            <hr class="bg-secondary border-2" />
             &copy;Singh Builders {new Date().getFullYear()} - All Rights
             Reserved
           </p>

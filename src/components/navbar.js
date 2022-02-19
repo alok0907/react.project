@@ -15,7 +15,7 @@ import Button from "react-bootstrap/Button";
 import House from "./house";
 import Plot from "./plot";
 import Apartment from "./apartment";
-import Login from "./login";
+import LoginContainer from "./loginContainer";
 
 export class NavigationBar extends Component {
   render() {
@@ -79,7 +79,7 @@ export class NavigationBar extends Component {
                 </Nav>
 
                 <Nav className="me text-decoration-none">
-                  <LinkContainer to="/login">
+                  <LinkContainer to="/loginContainer">
                     <Nav.Link>
                       <Button
                         className="mx-lg-5 mx-md-3 px-2 py-1 btn d-flex justify-content-center d-md-table mx-auto" //#  To change width and center the BUTTON
@@ -101,7 +101,7 @@ export class NavigationBar extends Component {
               <Route path="/house" element={<House />} />
               <Route path="/plot" element={<Plot />} />
               <Route path="/apartment" element={<Apartment />} />
-              <Route path="/login" element={<Login />} />
+              <Route path="/loginContainer" element={<LoginContainer />} />
             </Routes>
           </div>
         </BrowserRouter>
