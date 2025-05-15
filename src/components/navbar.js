@@ -2,20 +2,10 @@ import React, { Component } from "react";
 import logo from "../assets/img/favicon.png";
 import { LinkContainer } from "react-router-bootstrap";
 
-// import Home from "./home";
-// import About from "./about";
-// import Contact from "./contact";
-
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Button from "react-bootstrap/Button";
-import House from "./house";
-import Plot from "./plot";
-import Apartment from "./apartment";
-import LoginContainer from "./login";
-
 export class NavigationBar extends Component {
   render() {
     return (
@@ -69,19 +59,6 @@ export class NavigationBar extends Component {
 
                 <LinkContainer to="/contact">
                   <Nav.Link className="mx-3 ms-md-0 ps-md-0">Contact</Nav.Link>
-                </LinkContainer>
-              </Nav>
-
-              <Nav className="me text-decoration-none">
-                <LinkContainer to="/login">
-                  <Nav.Link>
-                    <Button
-                      className="mx-lg-5 mx-md-3 px-2 py-1 btn d-flex justify-content-center d-md-table mx-auto" //#  To change width and center the BUTTON
-                      variant="info"
-                    >
-                      Login
-                    </Button>
-                  </Nav.Link>
                 </LinkContainer>
               </Nav>
             </Navbar.Collapse>

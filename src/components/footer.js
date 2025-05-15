@@ -9,10 +9,15 @@ export const Footer = () => {
           <div className="col-md-4 col-sm-6">
             <h4>Useful Links</h4>
             <ul className="list-unstyled">
-              <li>House</li>
-              <li>Apartment</li>
-              <li>Residential Plot</li>
-              {/* <li>Contact</li> */}
+              <li>
+                <a href="/house">House</a>
+              </li>
+              <li>
+                <a href="/apartment">Apartment</a>
+              </li>
+              <li>
+                <a href="/plot">Residential Plot</a>
+              </li>
             </ul>
           </div>
           {/*column 2 */}
@@ -29,17 +34,15 @@ export const Footer = () => {
           <div className="col-md-4 col-sm-6">
             <h4>Contact</h4>
             <ul className="list-unstyled">
-              <li>support@veleto.com</li>
+              <li>support@singhbuilders.com</li>
               <li className="mt-2">+91 996 856 4545</li>
-              {/* <li>Address</li>
-              <li>Whats App</li> */}
             </ul>
           </div>
         </div>
         {/* Copyright */}
         <div className="footer-bottom">
           <hr className="bg-secondary border-2" />
-          <p className="text-xs-center">
+          <p className="text-xs-center text-center">
             &copy;Singh Builders {new Date().getFullYear()} - All Rights
             Reserved
           </p>

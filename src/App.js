@@ -8,7 +8,6 @@ import Contact from "./components/contact";
 import House from "./components/house";
 import Apartment from "./components/apartment";
 import Plot from "./components/plot";
-import LoginContainer from "./components/login";
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
           <Route path="/house" element={<House />} />
           <Route path="/plot" element={<Plot />} />
           <Route path="/apartment" element={<Apartment />} />
-          <Route path="/login" element={<LoginContainer />} />
         </Routes>
       </BrowserRouter>
     </div>
