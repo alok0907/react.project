@@ -3,9 +3,6 @@ import Heading from "./heading";
 import { Footer } from "./footer";
 import aboutPic from "../assets/img/about/about.jpg";
 
-import { LinkContainer } from "react-router-bootstrap";
-import { Outlet } from "react-router-dom";
-
 export default function About() {
   return (
     <>
